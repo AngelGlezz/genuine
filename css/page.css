@@ -1,0 +1,410 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#cover {
+    width: 100%;
+    height: 74vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 33%, rgba(187,221,254,1) 100%);
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    min-height: 936px;
+}
+
+.container {
+    padding: 0px!important;
+    overflow: hidden;
+}
+
+#navbarTogglerDemo02 {
+    justify-content: flex-end;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    z-index: 9999;
+    padding: 0px!important;
+    align-items: self-start!important;
+}
+
+.navbar .container {
+    max-width: 90%!important;
+    min-height: 100%;
+}
+
+.navbar-brand {
+    width: 110px;
+    height: 84px;
+    cursor: pointer;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../images/menu.svg) !important;
+}
+
+#navbarTogglerDemo02 {
+    background-color: #000;
+    z-index: 9999;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-item:nth-of-type(1) .lines {
+    width: 132px;
+}
+
+.line {
+    line-height: 45px;
+}
+
+.navbar-media {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    max-width: 24px;
+}
+
+.nav-item:nth-of-type(9) .icon-line {
+    margin-left: 15px;
+} 
+
+.icon-line {
+    margin-top: 16px;
+}
+
+#instagram {
+    background-image: url(../images/instagram.png);
+}
+
+#tiktok {
+    background-image: url(../images/tiktok.png);
+}
+
+.cover-logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-image: url(../images/logo.png);
+    width: 315px;
+    height: 220px;
+    margin: 0px auto;
+}
+
+.cover-info {
+    width: 400px;
+    margin: 0px auto;
+}
+
+.cover-text {
+    font-size: 50px;
+    text-align: center;
+    color: #BBDEFE;
+    margin-top: 50px;
+}
+
+.cover-text span {
+    color: #3C7DC1;
+}
+
+.foto-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-image: url(../images/foto-cover.png);
+    width: 100%;
+    height: 625px;
+    bottom: 0px;
+}
+
+#frase {
+    width: 100%;
+    height: 520px;
+    position: relative;
+    z-index: 9;
+}
+
+#frase .inner {
+    margin: 60px 60px 60px auto;
+    float: right;
+}
+
+.frase-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-image: url(../images/frase.png);
+    width: 600px;
+    height: 400px;
+}
+
+.square {
+    float: left;
+    width: 54%;
+    z-index: 9999;
+    background: rgb(60,125,193);
+    background: linear-gradient(180deg, rgba(60,125,193,1) 50%, rgba(1,11,22,1) 100%);
+    position: absolute;
+    top: -50px;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.square .container {
+    width: 600px;
+    height: 490px;
+    margin: 80px auto;
+}
+
+.square .container span {
+    font-size: 25px;
+}
+
+#data {
+    width: 100%;
+    background-color: #3C7DC1;
+    z-index: 9;
+    height: 770px;
+}
+
+.inner-data {
+    width: 49%;
+    float: left;
+    height: 770px;
+}
+
+.inner-content {
+    width: 95%;
+    margin: 150px auto 0px auto;
+    overflow: auto;
+}
+
+.title-data {
+    width: 95%;
+    color: #fff;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    margin: auto;
+}
+
+.trophy-content {
+    width: 95%;
+    margin: 50px auto 0px auto;
+    overflow: auto;
+}
+
+.trophy {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-image: url(../images/trophy.png);
+    width: 270px;
+    height: 365px;
+    float: left;
+}
+
+.trophy-txt {
+    font-size: 35px;
+    color: #000;
+    overflow: auto;
+    margin-top: 50px;
+}
+
+.trophy-txt .span {
+    color: #fff;
+    line-height: 35px;
+    width: 150px;
+}
+
+.data-txt {
+    width: 70%;
+}
+
+.span, .data-txt {
+    float: left;
+    margin: 15px auto 15px 10px;
+}
+
+.most-title {
+    width: 95%;
+    margin: 70px auto 100px auto;
+    color: #000;
+    font-size: 35px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.most-txt {
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    width: 57%;
+    margin: auto;
+}
+
+.most-txt span {
+    color: #BBDEFE;
+}
+
+#tournament {
+    width: 100%;
+    overflow: auto;
+}
+
+.ball {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-image: url(../images/balon.png);
+    width: 875px;
+    height: 822px;
+    z-index: 1;
+}
+
+.inner-tournament {
+    width: 98%;
+    overflow: auto;
+    z-index: 99999;
+    position: relative;
+}
+
+.title-tournament {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-image: url(../images/tournament.png);
+    width: 50%;
+    height: 60px;
+    margin: 60px auto 40px 60px;
+}
+
+.txt-tournament {
+    width: 43%;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 60px auto 40px 60px;
+}
+
+.quest-bullets {
+    color: #000;
+    font-size: 40px;
+    margin-left: 60px;
+}
+
+.bullets {
+    width: 50%;
+    height: 221px;
+    margin: 30px 0px 60px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-image: url(../images/bullets.png);
+}
+
+@media screen and (max-width: 1450px) {
+    .navbar-brand {
+        display: none!important;
+    }
+
+    .frase-img {
+        width: 460px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .navbar-brand {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .nav-link{
+        margin-left: 0.2rem!important;
+        width: 96px!important;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        height: 50px;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: .45rem;
+    }
+
+    .nav-item {
+        margin-left: 15px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .navbar .container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .navbar .container .container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0px;
+        min-height: 50px;
+    }
+
+    .navbar-toggler-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 576px){
+    .navbar .container .container{
+        width:auto;
+    }
+}
