@@ -152,7 +152,7 @@
 
 #frase {
     width: 100%;
-    height: 520px;
+    height: 600px;
     position: relative;
     z-index: 9;
 }
@@ -188,7 +188,6 @@
 
 .square .container {
     width: 600px;
-    height: 490px;
     margin: 80px auto;
 }
 
@@ -337,7 +336,7 @@
     width: 95%;
     height: 221px;
     margin: 30px 0px 0px 20px;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
@@ -376,7 +375,7 @@
 }
 
 #item-location {
-    background-image: url(../images/location.png);
+    background-image: url(../images/location_1.png);
 }
 
 #item-format {
@@ -570,43 +569,46 @@
 .sponsors-container-title {
     font-size: 30px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .sponsor-img {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 78%;
+    background-size: contain;
     position: relative;
     height: 160px;
 }
 
-.sponsor-row .sponsor-img:nth-of-type(1) {
-    background-image: url(../images/rowl.jpg);
-}
-
-.sponsor-row .sponsor-img:nth-of-type(2) {
-    background-image: url(../images/torras.png);
-}
-
 .sponsor-row .sponsor-img:nth-of-type(3) {
-    background-image: url(../images/goya-logo.jpg);
-    background-size: contain;
+    background-image: url(../images/rowl.jpg);
+    background-size: 95%;
 }
 
 .sponsor-row .sponsor-img:nth-of-type(4) {
+    background-image: url(../images/torras.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(1) {
+    background-image: url(../images/goya-logo.jpg);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(2) {
     background-image: url(../images/altivia.png);
-    background-size: contain;
 }
 
 .sponsor-row .sponsor-img:nth-of-type(5) {
     background-image: url(../images/tent.png);
-    background-size: contain;
+}
+
+.sponsor-row .sponsor-img:nth-of-type(6) {
+    background-image: url(../images/center.jpg);
 }
 
 #gallery-section {
     background: #BBDEFE80;
     width: 100%;
-    padding: 50px;
+    padding: 100px 50px;
     overflow: auto;
 }
 
@@ -730,6 +732,26 @@ textarea {
     float: left;
     background-image: url(../images/tiktok-footer.png);
     margin-left: 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 70px!important;
+}
+
+.slick-next:before {
+    content: '>'!important;
+}
+
+.slick-prev:before {
+    content: '<'!important;
+}
+
+.slick-next {
+    right: -30px!important;
+}
+
+.slick-prev {
+    left: -50px!important;
 }
 
 @media screen and (max-width: 1800px) {

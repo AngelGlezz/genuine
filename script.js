@@ -80,9 +80,8 @@ $(document).ready(function () {
         speed: 1000,
         slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
+		arrows: true,
+        autoplay: false,
         asNavFor: '.mini'
     });
     $('.mini').slick({
@@ -92,6 +91,7 @@ $(document).ready(function () {
       dots: false,
       centerMode: true,
       focusOnSelect: true,
-      centerPadding: '10px'
+      centerPadding: '10px',
+      arrows: false
     });
 });
