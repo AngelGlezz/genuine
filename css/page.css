@@ -22,6 +22,7 @@
     background-size: cover;
     position: relative;
     min-height: 790px;
+    overflow: hidden;
 }
 
 .container {
@@ -76,7 +77,22 @@
 }
 
 .nav-link:hover {
-    color: #fff;
+    color: #BBDEFE;
+}
+
+#donation {
+    width: 110px;
+    background-color: #BBDEFE;
+    border: none;
+    border-radius: 50px;
+    padding: 0px 10px;
+    text-align: center;
+    color: #010B16;
+}
+
+#donation:hover {
+    background-color: #3C7DC1;
+    color: #BBDEFE;
 }
 
 .nav-item:nth-of-type(1) .lines {
@@ -99,7 +115,11 @@
 
 .nav-item:nth-of-type(9) .icon-line {
     margin-left: 15px;
-} 
+}
+
+.nav-item {
+    cursor: pointer;
+}
 
 .icon-line {
     margin-top: 16px;
@@ -152,7 +172,7 @@
 
 #frase {
     width: 100%;
-    height: 600px;
+    height: 670px;
     position: relative;
     z-index: 9;
 }
@@ -369,13 +389,13 @@
 .item-location {
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 92%;
+    background-size: 94%;
     position: relative;
     height: 705px;
 }
 
 #item-location {
-    background-image: url(../images/location_1.png);
+    background-image: url(../images/location_2.png);
 }
 
 #item-format {
@@ -389,7 +409,7 @@
 #calendar {
     background-color: #BBDEFE80;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
 }
 
 .title-calendar {
@@ -406,28 +426,65 @@
     position: relative;
 }
 
-.july-30 {
-    background-image: url(../images/arrival.png);
+.btn-calendar {
+    width: 95%;
+    height: 57px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    background-color: #3C7DC1;
+    color: #f4f4f3;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 13px;
 }
 
-.july-31 {
-    background-image: url(../images/visit.png);
+.calendar-day {
+    position: relative;
 }
 
-.august-1 {
-    background-image: url(../images/morning.png);
+.calendar-day span {
+    font-size: 15px;
+    top: 3px;
+    position: absolute;
 }
 
-.august-2 {
-    background-image: url(../images/matches.png);
+.item-calendar-img {
+    width: 112px;
+    height: 125px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 10px auto;
 }
 
-.august-3 {
-    background-image: url(../images/morning-2.png);
+#arrive {
+    background-image: url(../images/arrive.png);
+}
+#museum {
+    background-image: url(../images/museum.png);
+}
+.court {
+    background-image: url(../images/court.png);
+}
+#trophy {
+    background-image: url(../images/trophy-1.png);
+    background-size: auto;
+}
+#dep {
+    background-image: url(../images/dep.png);
 }
 
-.august-4 {
-    background-image: url(../images/departure.png);
+.calendar-desc {
+    font-size: 25px;
+    text-align: center;
+    color: #003079;
+    position: relative;
+    top: 0px;
+}
+
+.calendar-desc div {
+    font-size: 18px;
+    line-height: 22px;
 }
 
 #format {
@@ -463,6 +520,8 @@
     background-color: #fff;
     width: 100%;
     padding: 50px 0px;
+    height: 83vh;
+    min-height: 770px;
 }
 
 .session-title {
@@ -495,6 +554,7 @@
     background: linear-gradient(180deg, rgba(0,48,121,1) 50%, rgba(1,11,22,1) 100%);
     width: 100%;
     padding: 50px 0px;
+    height: 83vh;
 }
 
 .stories-title {
@@ -529,24 +589,28 @@
 #sponsors-section {
     background-color: #fff;
     width: 100%;
-    padding: 20px 50px 50px;
+    height: 83vh;
+    padding: 50px 30px;
+}
+
+.sponsor-mid {
+    width: 45%;
+    overflow: auto;
+    min-height: 550px;
+    float: left;
     position: relative;
-    min-height: 390px;
 }
 
 .sponsors-txt {
     background-color: #BBDEFE;
-    padding: 30px 0px;
+    padding: 30px 0px 45px;
     z-index: 9999;
     overflow: auto;
-    width: 40%;
-    float: left;
-    position: absolute;
-    top: -30px;
+    width: 100%;
 }
 
 .sponsors-txt .title-format {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .sponsors-blue-txt {
@@ -573,15 +637,14 @@
 }
 
 .sponsor-img {
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative;
     height: 160px;
 }
 
 .sponsor-row .sponsor-img:nth-of-type(3) {
-    background-image: url(../images/rowl.jpg);
+    background-image: url(../images/rowl_1.jpg);
     background-size: 95%;
 }
 
@@ -594,15 +657,27 @@
 }
 
 .sponsor-row .sponsor-img:nth-of-type(2) {
-    background-image: url(../images/altivia.png);
+    background-image: url(../images/altivia_1.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(5) {
-    background-image: url(../images/tent.png);
+    background-image: url(../images/tent_1.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(6) {
     background-image: url(../images/center.jpg);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(7) {
+    background-image: url(../images/Rice_1.jpg);
+    background-position: center;
+    margin-top: 18px;
+}
+
+.sponsor-row .sponsor-img:nth-of-type(8) {
+    background-image: url(../images/sicar.png);
+    background-position: center;
+    margin-top: 18px;
 }
 
 #gallery-section {
@@ -639,8 +714,10 @@
     background: rgb(1,11,22);
     background: linear-gradient(180deg, rgba(1,11,22,1) 0%, rgba(1,47,118,1) 100%);
     width: 100%;
+    height: 83vh;
     padding: 50px;
     overflow: auto;
+    min-height: 500px;
 }
 
 .contacto-title {
@@ -678,11 +755,12 @@
 }
 
 textarea {
-    width: 500px;
-    float: right;
+    width: 100%;
+    float: left;
     height: 120px;
     background-color: #BBDEFE80;
     border: none;
+    padding: 0px 5px;
 }
 
 .btn-send {
@@ -691,6 +769,29 @@ textarea {
     height: 50px;
     float: right;
     margin: 30px 40px 0px 0px;
+    border: none;
+    border-radius: 50px;
+    padding: 0px 10px;
+    text-align: center;
+    color: #010B16;
+}
+
+.donation-link {
+    width: 275px;
+    height: 80px;
+    margin: 0px auto;
+    font-size: 30px;
+    color: #010B16;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+}
+
+.btn-donation {
+    background-color: #BBDEFE;
+    width: 275px;
+    height: 80px;
     border: none;
     border-radius: 50px;
     padding: 0px 10px;
@@ -707,7 +808,7 @@ textarea {
 
 #footer-txt {
     color: #fff;
-    font-size: 60px;
+    font-size: 55px;
 
 }
 
@@ -791,8 +892,8 @@ textarea {
 
 @media screen and (max-width: 1210px) {
     .nav-link{
-        margin-left: 0.2rem!important;
-        width: 96px!important;
+        margin-left: 0rem!important;
+        width: 91px!important;
         font-size: 12px;
     }
 }
@@ -825,7 +926,7 @@ textarea {
         height: auto;
         margin: auto;
         padding: 50px 0px!important;
-        width: 70%;
+        width: 90%;
     }
 
     .inner-data {
@@ -842,7 +943,25 @@ textarea {
     }
 }
 
+@media screen and (max-width: 1050px) {
+    .foto-cover {
+        height: 460px;
+    }
+}
+
 @media screen and (max-width: 992px) {
+    #calendar {
+        padding-bottom: 160px;
+    }
+
+    .btn-calendar {
+        height: 95px;
+    }
+
+    #footer-txt {
+        font-size: 44px;
+    }
+
     .item-location {
         height: 450px;
     }
@@ -916,6 +1035,15 @@ textarea {
         height: 25px;
     }
 
+    #cover {
+        min-height: 590px;
+    }
+
+    .foto-cover {
+        height: 425px;
+        bottom: -60px;
+    }
+
     .item-location {
         height: 950px;
         background-size: 80%;
@@ -925,12 +1053,28 @@ textarea {
         top: 0px;
     }
 
-    .august-1 {
-        margin-bottom: 20px;
+    #calendar {
+        padding-bottom: 20px;
+    }
+
+    .btn-calendar {
+        height: 57px;
+    }
+
+    .item-calendar {
+        height: 405px;
+    }
+
+    .short {
+        height: 290px;
     }
 
     .most-txt {
         width: 90%;
+    }
+
+    #session {
+        min-height: 930px;
     }
 
     #session-photo {
@@ -939,20 +1083,28 @@ textarea {
         background-size: 100% 80%;
     }
 
+    #session-text {
+        padding-left: 30px!important;
+        padding-right: 20px!important;
+    }
+
+    #stories-content {
+        min-height: 1575px;
+    }
+
     .stories-item {
         height: 450px;
     }
 
     #laliga {
-        background-size: 95% 100%;
+        background-size: 98% 100%;
     }
 
     #sponsors-section {
         padding: 20px 20px 20px;
     }
 
-    .sponsors-txt {
-        position: initial;
+    .sponsor-mid {
         float: none;
         width: 100%;
         margin: 30px auto;
@@ -960,7 +1112,6 @@ textarea {
 
     .sponsors-img-container {
         width: 100%;
-        float: none;
     }
 
     .sponsors-container-title {
@@ -968,8 +1119,12 @@ textarea {
         line-height: 25px;
     }
 
+    .donation-link {
+        bottom: 80px;
+    }
+
     #contact-section {
-        padding: 20px;
+        padding: 20px 15px;
     }
 
     .content-field {
@@ -992,6 +1147,10 @@ textarea {
 
     .footer-tiktok {
         float: right;
+    }
+
+    #footer-txt {
+        text-align: center;
     }
 }
 
@@ -1025,6 +1184,10 @@ textarea {
         width:auto;
     }
 
+    #session {
+        min-height: 1070px;
+    }
+
     .label {
         float: left;
     }
@@ -1044,12 +1207,21 @@ textarea {
         font-size: 35px;
     }
 
+    #cover {
+        min-height: 490px;
+    }
+
+    .foto-cover {
+        height: 325px;
+        bottom: -65px;
+    }
+
     .item-location {
         height: 850px;
     }
 
     #footer-txt {
-        font-size: 50px;
+        font-size: 19px;
         text-align: center;
     }
 }
@@ -1065,6 +1237,10 @@ textarea {
 
     .input {
         width: 53%;
+    }
+
+    .stories-title {
+        font-size: 37px;
     }
 }
 
@@ -1112,11 +1288,8 @@ textarea {
     }
 
     .contacto-title {
-        font-size: 50px;
-    }
-
-    #footer-txt {
-        font-size: 38px;
+        font-size: 48px;
+        margin-bottom: 20px;
     }
 }
 

@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $('#contacto-form').submit(function (e) {
         e.preventDefault();
