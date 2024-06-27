@@ -600,7 +600,7 @@
 .sponsor-mid {
     width: 45%;
     overflow: auto;
-    min-height: 550px;
+    min-height: 580px;
     float: left;
     position: relative;
 }
@@ -755,7 +755,7 @@
 }
 
 .content-field {
-    width: 600px;
+    width: 575px;
     overflow: auto;
     margin: 0px auto;
 }
@@ -771,7 +771,7 @@
 }
 
 .input, .input input {
-    width: 460px;
+    width: 440px;
     overflow: auto;
     float: right;
     background-color: #BBDEFE80;
@@ -1142,6 +1142,10 @@ textarea {
 
     .donation-link {
         bottom: 80px;
+    }
+
+    #contact-section .inner {
+        width: 100%;
     }
 
     #contact-section {
