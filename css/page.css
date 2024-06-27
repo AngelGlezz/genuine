@@ -519,9 +519,8 @@
 #session {
     background-color: #fff;
     width: 100%;
-    padding: 50px 0px;
-    height: 83vh;
-    min-height: 770px;
+    padding: 80px 0px 50px;
+    overflow: auto;
 }
 
 .session-title {
@@ -539,21 +538,27 @@
 #session-text {
     font-size: 25px;
     line-height: 30px;
+    width: 680px;
+    margin: 0px auto;
+    text-align: justify;
 }
 
 #session-photo {
-    background-position: top;
+    width: 500px;
+    height: 400px;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    background-size: 100% 80%;
+    background-size: contain;
     background-image: url(../images/session-photo.png);
+    margin: 0px auto;
 }
 
 #stories-content {
     background: rgb(0,48,121);
     background: linear-gradient(180deg, rgba(0,48,121,1) 50%, rgba(1,11,22,1) 100%);
     width: 100%;
-    padding: 50px 0px;
+    padding: 80px 0px 50px;
     height: 83vh;
 }
 
@@ -589,7 +594,6 @@
 #sponsors-section {
     background-color: #fff;
     width: 100%;
-    height: 83vh;
     padding: 50px 30px;
 }
 
@@ -717,13 +721,32 @@
     height: 83vh;
     padding: 50px;
     overflow: auto;
-    min-height: 500px;
+    position: relative;
+}
+
+#contact-section .inner {
+    width: 60%;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+}
+
+.inner-container {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    margin: auto;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
 }
 
 .contacto-title {
     color: #fff;
     font-size: 60px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .content-form form {
@@ -732,8 +755,9 @@
 }
 
 .content-field {
-    width: 95%;
+    width: 600px;
     overflow: auto;
+    margin: 0px auto;
 }
 
 .label {
@@ -763,12 +787,17 @@ textarea {
     padding: 0px 5px;
 }
 
+.btn-content {
+    width: 180px;
+    height: 50px;
+    position: relative;
+    margin: 30px auto 0px;
+}
+
 .btn-send {
     background-color: #BBDEFE;
     width: 180px;
     height: 50px;
-    float: right;
-    margin: 30px 40px 0px 0px;
     border: none;
     border-radius: 50px;
     padding: 0px 10px;
@@ -803,12 +832,12 @@ textarea {
     background: linear-gradient(180deg, rgba(34,127,187,1) 0%, rgba(1,11,22,1) 100%);
     width: 100%;
     overflow: auto;
-    padding: 30px 30px;
+    padding: 15px 30px;
 }
 
 #footer-txt {
     color: #fff;
-    font-size: 55px;
+    font-size: 19px;
 
 }
 
@@ -817,8 +846,8 @@ textarea {
     background-repeat: no-repeat;
     position: relative;
     background-size: 100%;
-    height: 75px;
-    width: 40%;
+    height: 20px;
+    width: 20px;
     float: left;
     background-image: url(../images/insta-footer.png);
 }
@@ -828,8 +857,8 @@ textarea {
     background-repeat: no-repeat;
     position: relative;
     background-size: 85%;
-    height: 75px;
-    width: 40%;
+    height: 20px;
+    width: 20px;
     float: left;
     background-image: url(../images/tiktok-footer.png);
     margin-left: 10px;
@@ -958,10 +987,6 @@ textarea {
         height: 95px;
     }
 
-    #footer-txt {
-        font-size: 44px;
-    }
-
     .item-location {
         height: 450px;
     }
@@ -973,10 +998,6 @@ textarea {
     .sponsors-blue-txt {
         font-size: 15px;
         line-height: 20px;
-    }
-
-    #session-photo {
-        background-size: 100% 50%;
     }
 }
 
@@ -1140,9 +1161,7 @@ textarea {
     }
 
     .footer-insta, .footer-tiktok {
-        width: 50px;
-        height: 50px;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .footer-tiktok {
@@ -1222,7 +1241,6 @@ textarea {
 
     #footer-txt {
         font-size: 19px;
-        text-align: center;
     }
 }
 
