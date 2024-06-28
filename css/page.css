@@ -10,6 +10,10 @@
     font-style: normal;
 }
 
+li {
+    list-style-type: none!important;
+}
+
 .page {
     overflow-x: hidden;
 }
@@ -29,8 +33,82 @@
     padding: 0px!important;
 }
 
-#navbarTogglerDemo02 {
-    justify-content: flex-end;
+.topbar {
+    background-color: #000;
+    padding: 20px 0px;
+    border-bottom: 2px solid #2d3741;
+}
+
+.topbar .container {
+    display: flex!important;
+    margin: auto auto;
+    position: relative;
+    overflow: auto;
+    min-height: 90px;
+}
+
+.topbar-container-item {
+    width: 33%;
+    display: flex;
+}
+
+.navbar-brand {
+    width: 110px;
+    height: 84px;
+    cursor: pointer;
+    display: block;
+}
+
+.topbar-main {
+    display: flex;
+}
+
+.topbar-main .nav-item {
+    display: flex!important;
+}
+
+.topbar-main .nav-item .nav-link {
+    text-align: center;
+}
+
+.topbar-item {
+    width: 33%;
+    display: flex;
+    margin: auto auto;
+}
+
+.topbar-mid-item {
+    min-width: 316px;
+}
+
+.nav-item, .nav-item a {
+    width: 100%;
+}
+
+.nav-item a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.topbar-social  {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-media {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+.nav-item-media {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-top: 35px;
 }
 
 .navbar {
@@ -43,14 +121,7 @@
 }
 
 .navbar .container {
-    max-width: 90%!important;
     min-height: 100%;
-}
-
-.navbar-brand {
-    width: 110px;
-    height: 84px;
-    cursor: pointer;
 }
 
 .navbar-brand img {
@@ -58,36 +129,49 @@
     height: 100%;
 }
 
+#navbarTogglerDemo02 {
+    background-color: #000;
+}
+
 .navbar-toggler-icon {
     background-image: url(../images/menu.svg) !important;
 }
 
-#navbarTogglerDemo02 {
-    background-color: #000;
-    z-index: 9999;
+.navbar-nav {
+    width: 390px;
+    margin: auto auto;
 }
 
-.nav-link {
-    color: #fff;
-    font-size: 15px;
-    text-align: center;
-    text-decoration: none;
+.navbar-nav .nav-item {
     cursor: pointer;
-    margin-left: 2rem;
+    width: 50%;
 }
 
-.nav-link:hover {
-    color: #BBDEFE;
+li:hover {
+    border-top: 5px solid #3C7DC1;
+}
+
+.dropdown-menu {
+    background-color: #000!important;
+}
+
+.dropdown-menu .nav-item {
+    width: 100%;
+}
+
+.dropdown-menu .nav-item:hover {
+    border-top: none;
+    background-color: #3C7DC1;
 }
 
 #donation {
-    width: 110px;
+    height: 55px;
     background-color: #BBDEFE;
     border: none;
-    border-radius: 50px;
-    padding: 0px 10px;
     text-align: center;
     color: #010B16;
+    margin-top: 10px;
+    line-height: 40px;
 }
 
 #donation:hover {
@@ -95,12 +179,12 @@
     color: #BBDEFE;
 }
 
-.nav-item:nth-of-type(1) .lines {
-    width: 132px;
+.btn-donation-top:hover, .topbar-social li:hover {
+    border-top: none!important;
 }
 
-.line {
-    line-height: 45px;
+.dropdown-toggle:hover, .dropdown-toggle {
+    color: #fff!important;
 }
 
 .navbar-media {
@@ -117,10 +201,6 @@
     margin-left: 15px;
 }
 
-.nav-item {
-    cursor: pointer;
-}
-
 .icon-line {
     margin-top: 16px;
 }
@@ -131,6 +211,10 @@
 
 #tiktok {
     background-image: url(../images/tiktok.png);
+}
+
+.navbar-toggler {
+    margin: auto 10px auto auto;
 }
 
 .cover-logo {
@@ -600,14 +684,14 @@
 .sponsor-mid {
     width: 45%;
     overflow: auto;
-    min-height: 580px;
+    min-height: 530px;
     float: left;
     position: relative;
 }
 
 .sponsors-txt {
     background-color: #BBDEFE;
-    padding: 30px 0px 45px;
+    padding: 10px 0px 18px;
     z-index: 9999;
     overflow: auto;
     width: 100%;
@@ -919,14 +1003,6 @@ textarea {
     }
 }
 
-@media screen and (max-width: 1210px) {
-    .nav-link{
-        margin-left: 0rem!important;
-        width: 91px!important;
-        font-size: 12px;
-    }
-}
-
 @media screen and (max-width: 1130px) {
     #frase {
         height: auto;
@@ -994,16 +1070,24 @@ textarea {
     .sponsors-txt .title-format {
         font-size: 40px;
     }
-
-    .sponsors-blue-txt {
-        font-size: 15px;
-        line-height: 20px;
-    }
 }
 
 @media screen and (max-width: 930px) {
-    .navbar-brand {
+    .topbar .container {
+        display: block!important;
+    }
+
+    .topbar-last-item {
         display: none!important;
+    }
+
+    .topbar-container-item {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        margin: auto!important;
+        margin-bottom: 10px;
     }
 }
 
@@ -1013,24 +1097,28 @@ textarea {
     }
 }
 
-@media screen and (max-width: 790px) {
-    #instagram, #tiktok {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 767px) {
+    li:hover {
+        border-top: none;
+    }
+
+    .container-fluid {
+        padding: 0px 0px!important;
+    }
+
     .navbar {
         height: 50px;
     }
 
-    .navbar-expand-md .navbar-nav .nav-link {
-        width: 120px;
-        margin: 0px auto!important;
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+    .dropdown .nav-link {
+        margin: auto auto;
     }
 
-    .nav-item {
-        margin-left: 15px;
+    .topbar-mid-item {
+        margin-top: 15px;
     }
 
     .container {
@@ -1056,6 +1144,10 @@ textarea {
         height: 25px;
     }
 
+    .navbar-nav {
+        width: 100%;
+    }
+
     #cover {
         min-height: 590px;
     }
@@ -1063,6 +1155,19 @@ textarea {
     .foto-cover {
         height: 425px;
         bottom: -60px;
+    }
+
+    .square .container span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .sponsor-mid {
+        min-height: 430px;
+    }
+
+    .donation-link {
+        bottom: 10px;
     }
 
     .item-location {
@@ -1110,7 +1215,12 @@ textarea {
     }
 
     #stories-content {
-        min-height: 1575px;
+        min-height: 1480px;
+        padding: 30px 0px 20px;
+    }
+
+    .stories-title {
+        margin-bottom: 20px;
     }
 
     .stories-item {
@@ -1138,10 +1248,6 @@ textarea {
     .sponsors-container-title {
         font-size: 20px;
         line-height: 25px;
-    }
-
-    .donation-link {
-        bottom: 80px;
     }
 
     #contact-section .inner {
@@ -1234,6 +1340,11 @@ textarea {
         min-height: 490px;
     }
 
+    .sponsors-blue-txt {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
     .foto-cover {
         height: 325px;
         bottom: -65px;
@@ -1249,6 +1360,10 @@ textarea {
 }
 
 @media (max-width: 450px) {
+    #format {
+        padding: 0px 0px;
+    }
+
     .format-item {
         background-size: 85% 90%;
     }
@@ -1276,14 +1391,14 @@ textarea {
     }
 
     .item-calendar {
-        padding: 10px;
+        padding-right: 0px!important;
     }
 
     #calendar .container {
         padding: 15px 0px!important;
     }
 
-    #calendar .container .row, #format .container .row, #stories-content .container .row {
+    #calendar .container .row, #format .container .row {
         margin-right: 0px!important;
     }
 
@@ -1298,11 +1413,11 @@ textarea {
     }
 
     .stories-item {
-        background-size: 100% 100%!important;
+        background-size: 93% 100%!important;
     }
 
     #laliga {
-        background-size: 103% 100%!important;
+        background-size: 96% 100%!important;
     }
 
     .item-location {
