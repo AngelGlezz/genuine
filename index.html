@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/page.css?v=1.1.1">
+		<link rel="stylesheet" type="text/css" href="css/page.css?v=1.1.2">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -39,26 +39,68 @@
 	</head>
 	<body>
 		<div class="page">
-			<div class="topbar">
-				<div class="container">
-					<div class="topbar-container-item">
+			<nav class="topbar navbar navbar-expand-md">
+				<div class="container container-fluid">
+					<div class="topbar-container-item topbar-first-item">
 						<a class="navbar-brand" href="https://genuineworldcup.com/"><img src="images/logo.png" /></a>
 					</div>
 					<div class="topbar-container-item topbar-mid-item">
-						<div class="topbar-item topbar-main">
-							<li class="nav-item">
-								<a class="roboto-regular line" id="sponsors" href="#sponsors-section">SPONSORS</a>
-							</li>
-						</div>
-						<div class="topbar-item topbar-main">
-							<li class="nav-item">
-								<a class="roboto-regular line" id="gallery" href="./gallery">GALLERY</a>
-							</li>
-						</div>
-						<div class="topbar-item topbar-main">
-							<li class="nav-item">
-								<a class="roboto-regular line" id="contact" href="./contact">CONTACT</a>
-							</li>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						 </button>
+						<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+							<ul class="navbar-nav">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT <br> &nbsp;GENUINE</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT GENUINE</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item">
+											<a class="nav-link roboto-regular topbar-desktop" href="#">GENUINE <br>WORLD CUP</a>
+											<a class="nav-link roboto-regular topbar-mobile" href="#">GENUINE WORLD CUP</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link roboto-regular topbar-desktop" href="./genuine-stories">GENUINE <br>STORIES</a>
+											<a class="nav-link roboto-regular topbar-mobile" href="./genuine-stories">GENUINE STORIES</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link roboto-regular" href="./gallery">GALLERY</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link roboto-regular" href="./contact">CONTACT</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT THE<br> TOURNAMENT</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT THE TOURNAMENT</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item">
+											<a class="nav-link roboto-regular topbar-desktop" href="./the-tournament">THE <br>TOURNAMENT</a>
+											<a class="nav-link roboto-regular topbar-mobile" href="./the-tournament">THE TOURNAMENT</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link roboto-regular topbar-desktop" href="./roundtable-sessions">ROUNDTABLE<br>SESSIONS</a>
+											<a class="nav-link roboto-regular topbar-mobile" href="./roundtable-sessions">ROUNDTABLE SESSIONS</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT OUR<br> &nbsp;SPONSORS</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT OUR SPONSORS</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item">
+											<a class="nav-link roboto-regular" id="sponsors" href="#sponsors-section">SPONSORS</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link roboto-regular topbar-desktop" href="./become-sponsor">BECOME<br>OUR SPONSOR</a>
+											<a class="nav-link roboto-regular topbar-mobile" href="./become-sponsor">BECOME OUR SPONSOR</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item btn-donation-top">
+									<a class="nav-link roboto-bold" id="donation" href="https://www.paypal.com/donate/?hosted_button_id=NYSHT5AAZSF6W" target="_blank">MAKE A DONATION</a>
+								</li>	
+							</ul>
 						</div>
 					</div>
 					<div class="topbar-container-item topbar-last-item">
@@ -72,37 +114,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<nav class="navbar navbar-expand-md">
-				<div class="container-fluid">
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-				 	</button>
-					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-						<ul class="navbar-nav">
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT <br> &nbsp;&nbsp;GENUINE</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item">
-										<a class="nav-link roboto-regular lines" id="tournament" href="#">GENUINE WORLD CUP</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link roboto-regular lines" id="tournament" href="./the-tournament">THE <br>TOURNAMENT</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link roboto-regular lines" id="sessions" href="./roundtable-sessions">ROUNDTABLE<br>SESSIONS</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link roboto-regular lines" id="stories" href="./genuine-stories">GENUINE <br>STORIES</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item btn-donation-top">
-								<a class="nav-link roboto-bold lines" id="donation" href="https://www.paypal.com/donate/?hosted_button_id=NYSHT5AAZSF6W" target="_blank">MAKE A DONATION</a>
-							</li>	
-						</ul>
-					</div>
-				</div>
 			</nav>
 			<div id="cover">
 					<div class="cover-info">
@@ -113,46 +124,26 @@
 					</div>
 					<div class="foto-cover"></div>
 			</div>
-			<div id="frase">
-				<div class="inner">
-					<div class="frase-img"></div>
-				</div>
-				<div class="square roboto-bold">
-					<div class="container">
-						The Genuine World Cup is here to change that.<br><br>Our Goal<br><br>
-						<span>Soccer has been defined as the “international language,” having the ability to bring people together through sport, health, and a sense of belonging.<br> 
-						However, for people with intellectual or neurological differences, soccer is often a language from which they are excluded.<br><br>
-						With Our Goal, we want to change this. By moving beyond spectatorship to active engagement, athletes with intellectual and neurological differences become stronger, healthier, and more self-assured, allowing them to engage more confidently in their broader communities.</span>
-					</div>
+			<div class="square roboto-bold">
+				<div class="container">
+					The Genuine World Cup is here to change that.<br><br>Our Goal<br><br>
+					<span>Soccer has been defined as the “international language,” having the ability to bring people together through sport, health, and a sense of belonging.<br> 
+					However, for people with intellectual or neurological differences, soccer is often a language from which they are excluded.<br><br>
+					With Our Goal, we want to change this. By moving beyond spectatorship to active engagement, athletes with intellectual and neurological differences become stronger, healthier, and more self-assured, allowing them to engage more confidently in their broader communities.</span>
 				</div>
 			</div>
-			<div id="sponsors-section">
-				<div class="sponsor-mid">
-					<div class="sponsors-txt">
-						<div class="title-format roboto-bold">SPONSORS</div>
-						<div class="sponsors-blue-txt roboto-regular">
-							Genuine World Cup is looking to partner with local and international brands and organizations to support our amazing event.
-							<br><br>Media exposure will be unprecedented, and brand exposure opportunities will be offered to sponsors throughout the tournament.
-							<br><br><span class="download roboto-bold">
-								<a href="../pdf/GHC - Sponsorship_present23mayo.pdf" download="Sponsorship_present23mayo.pdf" class="roboto-bold">Download our sponsorship packages here</a>
-							</span>
-						</div>
-					</div>
-					<a href="https://www.paypal.com/donate/?hosted_button_id=NYSHT5AAZSF6W" target="_blank" class="donation-link"><button class="roboto-bold btn-donation">Make a Donation</button></a>
-				</div>
-				<div class="sponsors-img-container">
-					<div class="sponsors-container-title roboto-bold">These organizations have already signed up as sponsors for the Genuine World Cup Houston 2024!</div>
-					<div class="container">
-						<div class="row sponsor-row justify-content-center">
-							<div class="sponsor-img col-6 col-md-4"></div>
-							<div class="sponsor-img col-6 col-md-4"></div>
-							<div class="sponsor-img col-6 col-md-4"></div>
-							<div class="sponsor-img col-6 col-md-4"></div>
-							<div class="sponsor-img col-6 col-md-4"></div>
-							<div class="sponsor-img col-6 col-md-4"></div>
-							<div class="sponsor-img col-6 col-md-4"></div>
-							<div class="sponsor-img col-6 col-md-4"></div>
-						</div>
+			<div class="sponsors-img-container" id="sponsors-section">
+				<div class="sponsors-container-title roboto-bold">These organizations have already signed up as sponsors for the Genuine World Cup Houston 2024!</div>
+				<div class="container">
+					<div class="row sponsor-row justify-content-center">
+						<div class="sponsor-img col-6 col-md-4"></div>
+						<div class="sponsor-img col-6 col-md-4"></div>
+						<div class="sponsor-img col-6 col-md-4"></div>
+						<div class="sponsor-img col-6 col-md-4"></div>
+						<div class="sponsor-img col-6 col-md-4"></div>
+						<div class="sponsor-img col-6 col-md-4"></div>
+						<div class="sponsor-img col-6 col-md-4"></div>
+						<div class="sponsor-img col-6 col-md-4"></div>
 					</div>
 				</div>
 			</div>

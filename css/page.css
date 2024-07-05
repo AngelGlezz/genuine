@@ -43,13 +43,13 @@ li {
     display: flex!important;
     margin: auto auto;
     position: relative;
-    overflow: auto;
     min-height: 90px;
 }
 
 .topbar-container-item {
-    width: 33%;
+    width: 10%;
     display: flex;
+    min-width: 130px;
 }
 
 .navbar-brand {
@@ -57,6 +57,11 @@ li {
     height: 84px;
     cursor: pointer;
     display: block;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
 }
 
 .topbar-main {
@@ -78,7 +83,13 @@ li {
 }
 
 .topbar-mid-item {
-    min-width: 316px;
+    min-width: 608px;
+    width: 78%;
+}
+
+.topbar-last-item {
+    width: 10%;
+    min-width: 90px;
 }
 
 .nav-item, .nav-item a {
@@ -86,7 +97,7 @@ li {
 }
 
 .nav-item a {
-    font-size: 20px;
+    font-size: 1.125rem;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -108,7 +119,6 @@ li {
     width: 25px;
     height: 25px;
     float: right;
-    margin-top: 35px;
 }
 
 .navbar {
@@ -120,15 +130,6 @@ li {
     align-items: self-start!important;
 }
 
-.navbar .container {
-    min-height: 100%;
-}
-
-.navbar-brand img {
-    width: 100%;
-    height: 100%;
-}
-
 #navbarTogglerDemo02 {
     background-color: #000;
 }
@@ -138,13 +139,12 @@ li {
 }
 
 .navbar-nav {
-    width: 390px;
-    margin: auto auto;
+    width: 100%;
 }
 
 .navbar-nav .nav-item {
     cursor: pointer;
-    width: 50%;
+    width: 25%;
 }
 
 li:hover {
@@ -153,6 +153,7 @@ li:hover {
 
 .dropdown-menu {
     background-color: #000!important;
+    width: 100%;
 }
 
 .dropdown-menu .nav-item {
@@ -172,6 +173,8 @@ li:hover {
     color: #010B16;
     margin-top: 10px;
     line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 #donation:hover {
@@ -214,7 +217,11 @@ li:hover {
 }
 
 .navbar-toggler {
-    margin: auto 10px auto auto;
+    margin: auto auto auto 20px;
+}
+
+.topbar-mobile {
+    display: none!important;
 }
 
 .cover-logo {
@@ -229,8 +236,8 @@ li:hover {
 }
 
 .cover-info {
-    width: 440px;
-    margin: 0px auto;
+    width: 100%;
+    margin: 20px auto;
 }
 
 .cover-text {
@@ -256,14 +263,10 @@ li:hover {
 
 #frase {
     width: 100%;
-    height: 670px;
-    position: relative;
-    z-index: 9;
 }
 
 #frase .inner {
-    margin: 60px 60px 60px auto;
-    float: right;
+    margin: 60px auto;
 }
 
 .frase-img {
@@ -274,25 +277,23 @@ li:hover {
     background-image: url(../images/frase.png);
     width: 600px;
     height: 400px;
+    margin: 0px auto;
 }
 
 .square {
-    float: left;
-    width: 54%;
-    z-index: 9999;
+    width: 100%;
     background: rgb(60,125,193);
     background: linear-gradient(180deg, rgba(60,125,193,1) 50%, rgba(1,11,22,1) 100%);
-    position: absolute;
-    top: -50px;
     color: #fff;
     font-size: 35px;
     text-align: center;
     line-height: 30px;
+    margin: auto;
+    padding: 80px 20px;
 }
 
 .square .container {
     width: 600px;
-    margin: 80px auto;
 }
 
 .square .container span {
@@ -675,18 +676,14 @@ li:hover {
     background-image: url(../images/laliga-1.png);
 }
 
-#sponsors-section {
-    background-color: #fff;
-    width: 100%;
-    padding: 50px 30px;
+.sponsors-container {
+    min-height: 84vh;
 }
 
 .sponsor-mid {
-    width: 45%;
+    width: 800px;
     overflow: auto;
-    min-height: 530px;
-    float: left;
-    position: relative;
+    margin: auto;
 }
 
 .sponsors-txt {
@@ -714,8 +711,9 @@ li:hover {
 }
 
 .sponsors-img-container {
-    width: 47%;
-    float: right;
+    width: 930px;
+    margin: auto;
+    padding: 30px 10px;
 }
 
 .sponsors-container-title {
@@ -738,6 +736,7 @@ li:hover {
 
 .sponsor-row .sponsor-img:nth-of-type(4) {
     background-image: url(../images/torras.png);
+    background-size: 90%;
 }
 
 .sponsor-row .sponsor-img:nth-of-type(1) {
@@ -748,7 +747,7 @@ li:hover {
     background-image: url(../images/altivia_1.png);
 }
 
-.sponsor-row .sponsor-img:nth-of-type(5) {
+.sponsor-row .sponsor-img:nth-of-type(7) {
     background-image: url(../images/tent_1.png);
 }
 
@@ -756,10 +755,9 @@ li:hover {
     background-image: url(../images/center.jpg);
 }
 
-.sponsor-row .sponsor-img:nth-of-type(7) {
+.sponsor-row .sponsor-img:nth-of-type(5) {
     background-image: url(../images/Rice_1.jpg);
-    background-position: center;
-    margin-top: 18px;
+    background-size: 90%;
 }
 
 .sponsor-row .sponsor-img:nth-of-type(8) {
@@ -968,18 +966,6 @@ textarea {
     left: -50px!important;
 }
 
-@media screen and (max-width: 1800px) {
-    .sponsors-blue-txt {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 1450px) {
-    .frase-img {
-        width: 460px;
-    }
-}
-
 @media screen and (max-width: 1380px) {
     .sponsors-txt .title-format {
         font-size: 50px;
@@ -1003,37 +989,13 @@ textarea {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    #donation {
+        line-height: 19px;
+    }
+}
+
 @media screen and (max-width: 1130px) {
-    #frase {
-        height: auto;
-        overflow: auto;
-    }
-
-    #frase .inner {
-        width: 300px;
-        float: none;
-        margin: 60px auto;
-    }
-
-    .frase-img {
-        width: 100%;
-        height: 220px;
-    }
-
-    .square {
-        position: initial;
-        width: 100%;
-        margin: 0px auto;
-        float: none;
-    }
-
-    .square .container {
-        height: auto;
-        margin: auto;
-        padding: 50px 0px!important;
-        width: 90%;
-    }
-
     .inner-data {
         width: 100%;
     }
@@ -1055,6 +1017,10 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
+    .topbar-first-item {
+        display: none;
+    }
+
     #calendar {
         padding-bottom: 160px;
     }
@@ -1073,10 +1039,6 @@ textarea {
 }
 
 @media screen and (max-width: 930px) {
-    .topbar .container {
-        display: block!important;
-    }
-
     .topbar-last-item {
         display: none!important;
     }
@@ -1089,6 +1051,20 @@ textarea {
         margin: auto!important;
         margin-bottom: 10px;
     }
+
+    .sponsors-img-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .sponsor-mid {
+        width: 95%;
+    }
+
+    .frase-img {
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -1098,6 +1074,19 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+    .sponsor-row .col-6 {
+        width: 47%!important;
+    }
+
+    .topbar{
+        border: none;
+    }
+
+    .navbar, .topbar .container {
+        height: 70px;
+        min-height: 70px!important;
+    }
+
     li:hover {
         border-top: none;
     }
@@ -1106,19 +1095,12 @@ textarea {
         padding: 0px 0px!important;
     }
 
-    .navbar {
-        height: 50px;
-    }
-
     .navbar-nav .nav-item {
         width: 100%;
     }
+
     .dropdown .nav-link {
         margin: auto auto;
-    }
-
-    .topbar-mid-item {
-        margin-top: 15px;
     }
 
     .container {
@@ -1148,8 +1130,42 @@ textarea {
         width: 100%;
     }
 
+    .topbar-container-item {
+        display: initial;
+        margin-top: 30px;
+    }
+
+    .topbar-first-item {
+        display: none;
+    }
+
+    .dropdown-toggle:hover {
+        background-color: #3C7DC1;
+    }
+
+    .topbar-desktop {
+        display: none!important;
+    }
+
+    .topbar-mobile {
+        display: block!important;
+    }
+
+    #donation {
+        line-height: 40px;
+        width: 50%;
+        border-radius: 15px;
+        margin: 0px auto;
+        font-size: 17px;
+    }
+
+    .topbar-mid-item {
+        min-width: 300px;
+    }
+
     #cover {
-        min-height: 590px;
+        height: 650px;
+        min-height: 650px;
     }
 
     .foto-cover {
@@ -1160,10 +1176,6 @@ textarea {
     .square .container span {
         font-size: 20px;
         line-height: 25px;
-    }
-
-    .sponsor-mid {
-        min-height: 430px;
     }
 
     .donation-link {
@@ -1231,14 +1243,8 @@ textarea {
         background-size: 98% 100%;
     }
 
-    #sponsors-section {
-        padding: 20px 20px 20px;
-    }
-
-    .sponsor-mid {
-        float: none;
-        width: 100%;
-        margin: 30px auto;
+    .sponsors-container {
+        min-height: 78vh;
     }
 
     .sponsors-img-container {
@@ -1332,12 +1338,13 @@ textarea {
 }
 
 @media (max-width: 500px) {
-    .cover-text {
-        font-size: 35px;
+    #cover {
+        height: 520px;
+        min-height: 520px;
     }
 
-    #cover {
-        min-height: 490px;
+    .cover-text {
+        font-size: 35px;
     }
 
     .sponsors-blue-txt {
@@ -1348,6 +1355,20 @@ textarea {
     .foto-cover {
         height: 325px;
         bottom: -65px;
+    }
+
+    .square .container {
+        width: 95%;
+    }
+
+    .square {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .square .container span {
+        font-size: 17px;
+        line-height: 16px;
     }
 
     .item-location {
@@ -1379,6 +1400,18 @@ textarea {
     .stories-title {
         font-size: 37px;
     }
+
+    .frase-img {
+        height: 280px;
+    }
+
+    #frase .inner {
+        margin: 50px auto;
+    }
+
+    .square {
+        padding: 30px 20px;
+    }
 }
 
 @media (max-width: 390px){
@@ -1387,7 +1420,7 @@ textarea {
     }
 
     .cover-logo {
-        width: 300px;
+        width: 200px;
     }
 
     .item-calendar {
