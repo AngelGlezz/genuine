@@ -1081,6 +1081,10 @@ textarea {
         width: 47%!important;
     }
 
+    .sponsor-row .sponsor-img:nth-of-type(7) {
+        background-position: center;
+    }
+
     .topbar{
         border: none;
     }
