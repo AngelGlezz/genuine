@@ -604,18 +604,20 @@ li:hover {
 #session {
     background-color: #fff;
     width: 100%;
+    height: 83vh;
     padding: 80px 0px 50px;
     overflow: auto;
+    position: relative;
 }
 
 .session-title {
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    background-size: 80% 100%;
+    background-size: 90%;
     width: 100%;
-    height: 50px;
-    margin: 0px auto 50px auto;
+    height: 65px;
+    margin: 0px auto 35px auto;
     background-image: url(../images/session.png);
     max-width: 1000px;
 }
@@ -771,6 +773,7 @@ li:hover {
     width: 100%;
     padding: 100px 50px;
     overflow: auto;
+    min-height: 84vh;
 }
 
 .gallery-content {
@@ -1211,19 +1214,15 @@ textarea {
         width: 90%;
     }
 
-    #session {
-        min-height: 930px;
+    #session .container .row {
+        width: 100%!important;
+        margin: auto!important;
     }
 
     #session-photo {
         background-position: bottom;
         height: 370px;
         background-size: 100% 80%;
-    }
-
-    #session-text {
-        padding-left: 30px!important;
-        padding-right: 20px!important;
     }
 
     #stories-content {
@@ -1241,10 +1240,6 @@ textarea {
 
     #laliga {
         background-size: 98% 100%;
-    }
-
-    .sponsors-container {
-        min-height: 78vh;
     }
 
     .sponsors-img-container {
@@ -1319,10 +1314,6 @@ textarea {
         width:auto;
     }
 
-    #session {
-        min-height: 1070px;
-    }
-
     .label {
         float: left;
     }
@@ -1348,8 +1339,7 @@ textarea {
     }
 
     .sponsors-blue-txt {
-        font-size: 15px;
-        line-height: 18px;
+        width: 85%;
     }
 
     .foto-cover {
@@ -1369,6 +1359,10 @@ textarea {
     .square .container span {
         font-size: 17px;
         line-height: 16px;
+    }
+
+    #session {
+        padding-top: 30px;
     }
 
     .item-location {
@@ -1440,9 +1434,8 @@ textarea {
     }
 
     #session-text {
-        width: 90%;
-        text-align: center;
-        margin: 0px auto;
+        font-size: 19px;
+        line-height: 22px;
     }
 
     .stories-item {
