@@ -1104,6 +1104,7 @@ textarea {
 
     .navbar-nav .nav-item {
         width: 100%;
+        height: 62px;
     }
 
     .dropdown .nav-link {
@@ -1159,8 +1160,9 @@ textarea {
     }
 
     #donation {
-        line-height: 40px;
-        width: 50%;
+        line-height: 48px;
+        width: 55%;
+        height: 100%;
         border-radius: 15px;
         margin: 0px auto;
         font-size: 17px;
