@@ -61,7 +61,7 @@ $(document).ready(function () {
         // Enviar datos a través de AJAX
         $.ajax({
             type: 'POST',
-            url: 'enviar_correo.php',
+            url: '../enviar_correo.php',
             data: datos,
             success: function (response) {
                 alert(response);

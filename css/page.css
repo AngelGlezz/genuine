@@ -190,6 +190,11 @@ li:hover {
     color: #fff!important;
 }
 
+.topbar-mark {
+    background-color: #3C7DC1!important;
+    color: #000!important;
+}
+
 .navbar-media {
     background-position: center;
     background-repeat: no-repeat;
@@ -604,8 +609,9 @@ li:hover {
 #session {
     background-color: #fff;
     width: 100%;
-    height: 83vh;
-    padding: 80px 0px 50px;
+    height: auto;
+    min-height: 81vh;
+    padding: 80px 0px 20px;
     overflow: auto;
     position: relative;
 }
@@ -617,7 +623,7 @@ li:hover {
     background-size: 90%;
     width: 100%;
     height: 65px;
-    margin: 0px auto 35px auto;
+    margin: 0px auto 50px auto;
     background-image: url(../images/session.png);
     max-width: 1000px;
 }
@@ -969,6 +975,12 @@ textarea {
     left: -50px!important;
 }
 
+@media screen and (max-width: 1400px) {
+    #session-text, #session-photo {
+        width: 48%;
+    }
+}
+
 @media screen and (max-width: 1380px) {
     .sponsors-txt .title-format {
         font-size: 50px;
@@ -1077,6 +1089,10 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+    .cover-logo{
+        height: 160px;
+    }
+
     .sponsor-row .col-6 {
         width: 47%!important;
     }
@@ -1104,7 +1120,6 @@ textarea {
 
     .navbar-nav .nav-item {
         width: 100%;
-        height: 62px;
     }
 
     .dropdown .nav-link {
@@ -1160,8 +1175,8 @@ textarea {
     }
 
     #donation {
-        line-height: 48px;
-        width: 55%;
+        line-height: 40px;
+        width: 50%;
         height: 100%;
         border-radius: 15px;
         margin: 0px auto;
@@ -1194,6 +1209,10 @@ textarea {
     .item-location {
         height: 950px;
         background-size: 80%;
+    }
+
+    #session-text, #session-photo {
+        width: 98%;
     }
 
     #item-format {
