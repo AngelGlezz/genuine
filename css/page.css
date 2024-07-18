@@ -721,7 +721,7 @@ li:hover {
 .sponsors-img-container {
     width: 930px;
     margin: auto;
-    padding: 30px 10px;
+    padding: 30px 0px 0px;
 }
 
 .sponsors-container-title {
@@ -731,47 +731,74 @@ li:hover {
 }
 
 .sponsor-img {
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 80%;
     height: 160px;
 }
 
-.sponsor-row .sponsor-img:nth-of-type(3) {
-    background-image: url(../images/rowl_1.jpg);
-    background-size: 95%;
-}
-
-.sponsor-row .sponsor-img:nth-of-type(4) {
-    background-image: url(../images/torras.png);
-    background-size: 90%;
-}
-
 .sponsor-row .sponsor-img:nth-of-type(1) {
-    background-image: url(../images/goya-logo.jpg);
+    background-image: url(../images/rice_2.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(2) {
-    background-image: url(../images/altivia_1.png);
+    background-image: url(../images/torras_2.png);
 }
 
-.sponsor-row .sponsor-img:nth-of-type(7) {
-    background-image: url(../images/tent_1.png);
+.sponsor-row .sponsor-img:nth-of-type(3) {
+    background-image: url(../images/goya_2.png);
 }
 
-.sponsor-row .sponsor-img:nth-of-type(6) {
-    background-image: url(../images/center.jpg);
+.sponsor-row .sponsor-img:nth-of-type(4) {
+    background-image: url(../images/center_2.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(5) {
-    background-image: url(../images/Rice_1.jpg);
-    background-size: 90%;
+    background-image: url(../images/tricon_2.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(6) {
+    background-image: url(../images/tom_rasy.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(7) {
+    background-image: url(../images/mision.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(9) {
+    background-image: url(../images/correa.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(8) {
-    background-image: url(../images/sicar.png);
-    background-position: center;
-    margin-top: 18px;
+    background-image: url(../images/one_love.png);
+    background-position: top;
+    background-size: 29%;
+}
+
+.sponsor-row .sponsor-img:nth-of-type(10) {
+    background-image: url(../images/altivia_2.png);
+    background-size: 64%;
+}
+
+.sponsor-row .sponsor-img:nth-of-type(11) {
+    background-image: url(../images/sicar_2.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(12) {
+    background-image: url(../images/tent_2.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(13) {
+    background-image: url(../images/rowl_2.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(14) {
+    background-image: url(../images/truckman_2.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(15) {
+    background-image: url(../images/chevron.png);
+    background-size: 50%;
 }
 
 #gallery-section {
@@ -1091,10 +1118,6 @@ textarea {
 @media screen and (max-width: 767px) {
     .cover-logo{
         height: 160px;
-    }
-
-    .sponsor-row .col-6 {
-        width: 47%!important;
     }
 
     .sponsor-row .sponsor-img:nth-of-type(7) {
