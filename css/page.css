@@ -945,6 +945,38 @@ textarea {
     text-align: center;
 }
 
+#volunteer {
+    width: 100%;
+    height: 1500px;
+    background-image: url(../images/volunteer_desktop.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#volunteer .btn-send {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    padding-top: 4px;
+}
+
+#volunteer .btn-send a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto';
+    color: #3C7DC1;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
+}
+
 #footer {
     background: rgb(34,127,187);
     background: linear-gradient(180deg, rgba(34,127,187,1) 0%, rgba(1,11,22,1) 100%);
@@ -954,9 +986,9 @@ textarea {
 }
 
 #footer-txt {
+    font-family: 'Roboto';
     color: #fff;
     font-size: 19px;
-
 }
 
 .footer-insta {
@@ -1005,6 +1037,10 @@ textarea {
 @media screen and (max-width: 1400px) {
     #session-text, #session-photo {
         width: 48%;
+    }
+
+    #volunteer {
+        height: 900px;
     }
 }
 
@@ -1319,6 +1355,10 @@ textarea {
         width: 75%;
     }
 
+    #volunteer {
+        height: 700px;
+    }
+
     .footer-insta, .footer-tiktok {
         margin-top: 10px;
     }
@@ -1457,6 +1497,10 @@ textarea {
 
     .sponsor-row .sponsor-img:nth-of-type(2) {
         background-size: 60%;
+    }
+
+    #volunteer {
+        height: 500px;
     }
 }
 
