@@ -229,12 +229,54 @@ li:hover {
     display: none!important;
 }
 
+.top-banner {
+    width: 100%;
+    height: 100px;
+    padding: 10px 0px;
+}
+
+.banner {
+    width: 500px;
+    height: 100%;
+    margin: 0px auto;
+    background-color: #3C7DC1;
+}
+
+.img-banner {
+    width: 120px;
+    height: 100%;
+    background-image: url(../images/banner-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+}
+
+.txt-banner {
+    width: 75%;
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 800;
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.btn-banner {
+    width: 140px;
+    margin: auto;
+    background-color: #003079;
+    text-transform: uppercase;
+}
+
 .cover-logo {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    background-image: url(../images/logo.png);
+    background-image: url(../images/logo_1.png);
     width: 315px;
     height: 220px;
     margin: 0px auto;
@@ -479,9 +521,9 @@ li:hover {
 .item-location {
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 94%;
+    background-size: 83%;
     position: relative;
-    height: 705px;
+    height: 700px;
 }
 
 #item-location {
@@ -772,7 +814,7 @@ li:hover {
 .sponsor-row .sponsor-img:nth-of-type(8) {
     background-image: url(../images/one_love.png);
     background-position: top;
-    background-size: 29%;
+    background-size: auto 104%;
 }
 
 .sponsor-row .sponsor-img:nth-of-type(10) {
@@ -797,8 +839,8 @@ li:hover {
 }
 
 .sponsor-row .sponsor-img:nth-of-type(15) {
-    background-image: url(../images/chevron.png);
-    background-size: 50%;
+    background-image: url(../images/chevron_1.png);
+    background-size: 63%;
 }
 
 #gallery-section {
@@ -947,15 +989,17 @@ textarea {
 
 #volunteer {
     width: 100%;
-    height: 1500px;
-    background-image: url(../images/volunteer_desktop.jpg);
-    background-position: top;
+    height: 1300px;
+    background-image: url(../images/volunteer_desktop_2.jpg);
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
 #volunteer .btn-send {
+    width: 250px;
+    height: 80px;
     position: absolute;
     bottom: 30px;
     left: 0px;
@@ -973,8 +1017,8 @@ textarea {
     text-align: center;
     text-decoration: none;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 21px;
+    font-size: 24px;
+    line-height: 70px;
 }
 
 #footer {
@@ -1034,13 +1078,19 @@ textarea {
     left: -50px!important;
 }
 
+@media screen and (max-width: 1500px) {
+    #volunteer {
+        height: 760px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
-    #session-text, #session-photo {
-        width: 48%;
+    .item-location{
+        height: 620px;
     }
 
-    #volunteer {
-        height: 900px;
+    #session-text, #session-photo {
+        width: 48%;
     }
 }
 
@@ -1251,6 +1301,10 @@ textarea {
         min-height: 650px;
     }
 
+    #navbarTogglerDemo02 {
+        padding-bottom: 10px;
+    }
+
     .foto-cover {
         height: 425px;
         bottom: -60px;
@@ -1356,7 +1410,7 @@ textarea {
     }
 
     #volunteer {
-        height: 700px;
+        height: 650px;
     }
 
     .footer-insta, .footer-tiktok {
@@ -1417,6 +1471,21 @@ textarea {
 }
 
 @media (max-width: 500px) {
+    .banner {
+        width: 300px;
+    }
+
+    .img-banner {
+        width: 80px;
+        background-size: 140%;
+    }
+
+    .txt-banner {
+        width: 73%;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
     #cover {
         height: 520px;
         min-height: 520px;
@@ -1500,7 +1569,16 @@ textarea {
     }
 
     #volunteer {
-        height: 500px;
+        height: 550px;
+    }
+
+    #volunteer .btn-send {
+        height: 50px;
+    }
+
+    #volunteer .btn-send a {
+        line-height: 40px;
+        font-size: 20px;
     }
 }
 
