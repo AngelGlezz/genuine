@@ -1235,7 +1235,7 @@ textarea {
         margin: auto auto;
     }
 
-    .container {
+    .container, .square .container {
         width: 90%;
         margin: 0px auto;
     }
@@ -1411,6 +1411,10 @@ textarea {
 
     #volunteer {
         height: 650px;
+    }
+
+    .sponsor-row .sponsor-img:nth-of-type(15) {
+        background-size: 68%;
     }
 
     .footer-insta, .footer-tiktok {
