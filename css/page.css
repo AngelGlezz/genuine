@@ -535,7 +535,7 @@ li:hover {
 }
 
 #item-teams {
-    background-image: url(../images/Teams.png);
+    background-image: url(../images/equipos_1.png);
 }
 
 #calendar {
@@ -780,67 +780,83 @@ li:hover {
 }
 
 .sponsor-row .sponsor-img:nth-of-type(1) {
-    background-image: url(../images/rice_2.png);
+    background-image: url(../images/genuine.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(2) {
-    background-image: url(../images/torras_2.png);
+    background-image: url(../images/rice_2.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(3) {
-    background-image: url(../images/goya_2.png);
+    background-image: url(../images/torras_2.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(4) {
-    background-image: url(../images/center_2.png);
+    background-image: url(../images/goya_2.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(5) {
-    background-image: url(../images/tricon_2.png);
+    background-image: url(../images/center_2.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(6) {
-    background-image: url(../images/tom_rasy.png);
+    background-image: url(../images/tricon_2.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(7) {
-    background-image: url(../images/mision.png);
-}
-
-.sponsor-row .sponsor-img:nth-of-type(9) {
-    background-image: url(../images/correa.png);
+    background-image: url(../images/tom_rasy.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(8) {
+    background-image: url(../images/mision.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(10) {
+    background-image: url(../images/correa.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(9) {
     background-image: url(../images/one_love.png);
     background-position: top;
     background-size: auto 104%;
 }
 
-.sponsor-row .sponsor-img:nth-of-type(10) {
+.sponsor-row .sponsor-img:nth-of-type(11) {
     background-image: url(../images/altivia_2.png);
     background-size: 64%;
 }
 
-.sponsor-row .sponsor-img:nth-of-type(11) {
-    background-image: url(../images/sicar_2.png);
+.sponsor-row .sponsor-img:nth-of-type(13) {
+    background-image: url(../images/powerade.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(12) {
-    background-image: url(../images/tent_2.png);
-}
-
-.sponsor-row .sponsor-img:nth-of-type(13) {
-    background-image: url(../images/rowl_2.png);
+    background-image: url(../images/sicar_2.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(14) {
-    background-image: url(../images/truckman_2.png);
+    background-image: url(../images/know.png);
 }
 
 .sponsor-row .sponsor-img:nth-of-type(15) {
+    background-image: url(../images/tent_2.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(16) {
+    background-image: url(../images/rowl_2.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(17) {
+    background-image: url(../images/truckman_2.png);
+}
+
+.sponsor-row .sponsor-img:nth-of-type(18) {
     background-image: url(../images/chevron_1.png);
     background-size: 63%;
+}
+
+.sponsor-row .sponsor-img:nth-of-type(19) {
+    background-image: url(../images/AGF.png);
 }
 
 #gallery-section {
